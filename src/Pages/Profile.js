@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 
 // Profile component
-function Profile() {
-  const [isEditing, setIsEditing] = useState(false);
-  const [username, setUsername] = useState('safedkabootar');
-  const [phoneNumber, setPhoneNumber] = useState('123-456-7890');
-  const [email, setEmail] = useState('safedkabootar@gmail.com');
-  const[name] = useState("Safed Kabootar");
-    const[idNumber] = useState("00000");
-    const[branch] = useState("Computer Engineering");
+function Profile() {  const [isEditing, setIsEditing] = useState(false);
+  const [username, setUsername] = useState('vaibhavgt0');
+  const [phoneNumber, setPhoneNumber] = useState('+91 9411566926');
+  const [email, setEmail] = useState('vaibhavnargwani28@gmail.com');
+  const [name] = useState("Vaibhav Nargwani");
+  const [idNumber] = useState("62287");
+  const [branch] = useState("Computer Engineering");
 
   const handleEditToggle = () => {
     setIsEditing(!isEditing);

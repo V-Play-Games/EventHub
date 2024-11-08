@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import '..\\src\\App.css';
-import { Outlet, useNavigate, Link } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 function LoginPage() {
     const [idNumber, setIdNumber] = useState('');
     const [password, setPassword] = useState('');
-    
+    const navigate = useNavigate();
   
     const handleSubmit = (event) => {
       event.preventDefault();
@@ -44,11 +44,15 @@ function LoginPage() {
             />
           </div>
             <br></br>
-          <Link to="/Dashboard">
-          <button type="submit" style={{flex:1, padding: '10px 15px', backgroundColor: '#007bff', color: 'white', border: 'none', borderRadius: '5px'}}>
+          <button type="submit" onClick={() => {
+            if (idNumber == 62287 && password == "TagoreBhawan") {
+              navigate("/dashboard");
+            } else {
+              alert("Wrong Id or Password");
+            }
+          }} style={{flex:1, padding: '10px 15px', backgroundColor: '#007bff', color: 'white', border: 'none', borderRadius: '5px'}}>
             Sign In
           </button>
-          </Link>
           
         </form>
       </div>
