@@ -29,8 +29,8 @@ function ExamCategories() {
           <h2>Freshers</h2>
         </div></td></tr>
 
-        <button onClick={()=>navigate('/profile')}  style={{ padding: '10px 15px', backgroundColor: '#007bff', color: 'white', border: 'none', borderRadius: '5px' }}>
-            profile
+        <button onClick={()=>navigate('/profile')} style={{ padding: '10px 15px', backgroundColor: '#007bff', color: 'white', border: 'none', borderRadius: '5px' }}>
+            Profile
           </button>
 
         </table>
