@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import '..\\src\\App.css';
-import { useNavigate } from "react-router-dom";
+import { Outlet, useNavigate, Link } from "react-router-dom";
 function LoginPage() {
     const [idNumber, setIdNumber] = useState('');
     const [password, setPassword] = useState('');
@@ -15,6 +15,7 @@ function LoginPage() {
     
   
     return (
+      <>
       <div className="login-container" style={{flex:1,
       flexDirection:'row',
       alignItems:'center',
@@ -41,11 +42,16 @@ function LoginPage() {
             />
           </div>
             <br></br>
-          <button type="submit" onclick={()=>navigate("src\\Pages\\Profile.js")} style={{flex:1, padding: '10px 15px', backgroundColor: '#007bff', color: 'white', border: 'none', borderRadius: '5px'}}>Sign In</button>
+          <Link to="/profile">
+          <button type="submit" style={{flex:1, padding: '10px 15px', backgroundColor: '#007bff', color: 'white', border: 'none', borderRadius: '5px'}}>
+            Sign In
+          </button>
+          </Link>
           
         </form>
       </div>
-      
+      <Outlet />
+      </>
     );
   }
   

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 // Profile component
-const ProfilePage = () => {
+function Profile() {
   const [isEditing, setIsEditing] = useState(false);
   const [username, setUsername] = useState('safedkabootar');
   const [phoneNumber, setPhoneNumber] = useState('123-456-7890');
@@ -21,8 +21,7 @@ const ProfilePage = () => {
     console.log('Profile updated:', { username, phoneNumber, email });
   };
 
-  return (
-    <div style={{ maxWidth: '400px', margin: '0 auto', padding: '20px', border: '1px solid #ccc', borderRadius: '5px' }}>
+  return <div style={{ maxWidth: '400px', margin: '0 auto', padding: '20px', border: '1px solid #ccc', borderRadius: '5px' }}>
       <h2>Personal Info</h2>
       {isEditing ? (
         <form onSubmit={handleSave}>
@@ -83,16 +82,6 @@ const ProfilePage = () => {
         </div>
       )}
     </div>
-  );
 };
 
-// Main App component
-const App = () => {
-  return (
-    <div>
-      <ProfilePage />
-    </div>
-  );
-};
-
-export default App;
+export default Profile;
