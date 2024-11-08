@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/event-hub/static/css/main.9ec986fd.css",
-    "main.js": "/event-hub/static/js/main.0794899a.js",
-    "static/js/453.97673497.chunk.js": "/event-hub/static/js/453.97673497.chunk.js",
-    "static/media/logo.png": "/event-hub/static/media/logo.e118076141c85df4f4d1.png",
-    "index.html": "/event-hub/index.html",
-    "main.9ec986fd.css.map": "/event-hub/static/css/main.9ec986fd.css.map",
-    "main.0794899a.js.map": "/event-hub/static/js/main.0794899a.js.map",
-    "453.97673497.chunk.js.map": "/event-hub/static/js/453.97673497.chunk.js.map"
+    "main.css": "/EventHub/static/css/main.9ec986fd.css",
+    "main.js": "/EventHub/static/js/main.eb1d8218.js",
+    "static/js/453.97673497.chunk.js": "/EventHub/static/js/453.97673497.chunk.js",
+    "static/media/logo.png": "/EventHub/static/media/logo.e118076141c85df4f4d1.png",
+    "index.html": "/EventHub/index.html",
+    "main.9ec986fd.css.map": "/EventHub/static/css/main.9ec986fd.css.map",
+    "main.eb1d8218.js.map": "/EventHub/static/js/main.eb1d8218.js.map",
+    "453.97673497.chunk.js.map": "/EventHub/static/js/453.97673497.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9ec986fd.css",
-    "static/js/main.0794899a.js"
+    "static/js/main.eb1d8218.js"
   ]
 }
