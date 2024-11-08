@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import '..\\src\\App.css';
+import logo from '..\\public\\logo.png'
 import { Outlet, useNavigate } from "react-router-dom";
 function LoginPage() {
     const [idNumber, setIdNumber] = useState('');
@@ -22,6 +23,7 @@ function LoginPage() {
       justifyContent:'center',
       maxWidth: '400px', margin: '0 auto', padding: '20px', border: '1px solid #ccc', borderRadius: '5px'
        }}>
+        <img src={logo} width="100"/>
         <h1>Student Login</h1>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
