@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Outlet, useNavigate } from "react-router-dom";
 
 // Profile component
 function Profile() {  const [isEditing, setIsEditing] = useState(false);
@@ -8,6 +9,7 @@ function Profile() {  const [isEditing, setIsEditing] = useState(false);
   const [name] = useState("Vaibhav Nargwani");
   const [idNumber] = useState("62287");
   const [branch] = useState("Computer Engineering");
+  const navigate = useNavigate();
 
   const handleEditToggle = () => {
     setIsEditing(!isEditing);
@@ -78,6 +80,20 @@ function Profile() {  const [isEditing, setIsEditing] = useState(false);
           <button onClick={handleEditToggle} style={{ padding: '10px 15px', backgroundColor: '#007bff', color: 'white', border: 'none', borderRadius: '5px' }}>
             Edit Profile
           </button>
+
+          <button onClick={() => navigate('/Dashboard')}  style={{ padding: '10px 15px', backgroundColor: '#007bff', color: 'white', border: 'none', borderRadius: '5px' }}>
+            Back
+          </button>
+
+          <br></br>
+          
+          <button onClick={() => navigate('/')}  style={{ padding: '10px 15px', backgroundColor: '#007bff', color: 'white', border: 'none', borderRadius: '5px' }}>
+            Logout          
+          </button>
+
+          
+
+
         </div>
       )}
     </div>
