@@ -1,6 +1,6 @@
         body {
-            background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
-            color: #fff;
+            background: linear-gradient(to bottom, #111111 0%, #131313 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
             font-family: sans-serif;
             margin: 0;
             padding: 0;
