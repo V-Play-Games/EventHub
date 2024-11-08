@@ -19,7 +19,9 @@ function LoginPage() {
       <div className="login-container" style={{flex:1,
       flexDirection:'row',
       alignItems:'center',
-      justifyContent:'center'}}>
+      justifyContent:'center',
+      maxWidth: '400px', margin: '0 auto', padding: '20px', border: '1px solid #ccc', borderRadius: '5px'
+       }}>
         <h1>Student Login</h1>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
